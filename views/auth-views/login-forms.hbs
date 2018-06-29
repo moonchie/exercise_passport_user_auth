@@ -1,0 +1,24 @@
+<h2> Login </h2>
+{{> flashMessages}}
+
+<form method="POST" action="/process-login">
+    <label>
+        Email:
+        <input type="text" name="email" placeholder="lando@skyrock.com" />
+    </label>
+    <br />
+
+    <label>
+        Password:
+        <input type="text" name="loginPassword" placeholder="Password here" />
+    </label>
+    <br />
+
+    <button>Log in</button>
+    <br />
+    <hr />
+</form>
+
+
+<a href="/google/login">Log in with Google</a>
+<a href="/github/login">Log in with Github</a>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+<header>
+  <nav>
+      <a href="/">Home</a>
+
+      {{#if blahUser}}
+      <strong>{{blahUser.email}}</strong>
+      <a href="/room/add">Add a room</a>
+      <a href="/settings">User Settings  </a>
+      <a href="/logout">Log out</a>
+
+
+      {{else}}
+      <a href="/login">Log in</a>
+      <a href="/signup">Sign up</a>
+      {{/if}}
+      </nav>
+  <img src="https://media.giphy.com/media/11s7Ke7jcNxCHS/giphy.gif" />
+</header>
+
+    {{{body}}}
+
+<footer>Made with some secrets and Ironhack</footer>
+
+    <script src='/javascripts/script.js'></script>
+  </body>
+</html>

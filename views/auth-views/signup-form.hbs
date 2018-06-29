@@ -1,0 +1,27 @@
+<h2> Sign Up</h2>
+{{> flashMessages}}
+
+<form method="POST" action="/process-signup">
+    <label>
+        Full name:
+        <input type="text" name="fullName" placeholder="Lando Calrissian" />
+    </label>
+    <br />
+
+    <label>
+        Email:
+        <input type="text" name="email" placeholder="lando@skyrock.com" />
+    </label>
+    <br />
+
+    <label>
+        Password:
+        <input type="text" name="originalPassword" placeholder="Password here" />
+    </label>
+    <br />
+
+    <button>Sign Up</button>
+    <br />
+    <hr />
+</form>
+<a href="/google/login">Log in with Google</a>

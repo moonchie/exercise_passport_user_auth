@@ -1,0 +1,15 @@
+<h2>My Rooms</h2>
+
+<ul>
+    {{#each roomArry}}
+    <li>
+        <h3>{{this.name}}</h3>
+        <p>Description: {{this.description}}</p>
+        <img src="{{this.pictureUrl}}" />
+    </li>
+    {{else}}
+    <p>You don't have any rooms yet.</p>
+    <a href="/room/add">Add a Room</a>
+    {{/each}}
+
+</ul>
